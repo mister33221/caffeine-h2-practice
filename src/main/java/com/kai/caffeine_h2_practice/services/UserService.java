@@ -56,12 +56,12 @@ public class UserService {
     }
 
     public CacheStats getCacheStatistics() {
-        // 取得緩存區 products
+        // 取得緩存區 users
         CaffeineCache cache = (CaffeineCache) cacheManager.getCache("users");
         if (cache != null) {
             Cache<Object, Object> nativeCache = cache.getNativeCache();
             return nativeCache.stats();  // 返回 CacheStats
         }
-        throw new IllegalStateException("Cache 'products' not found!");
+        throw new IllegalStateException("Cache 'users' not found!");
     }
 }

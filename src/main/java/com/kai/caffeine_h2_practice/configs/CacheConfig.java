@@ -1,10 +1,7 @@
 package com.kai.caffeine_h2_practice.configs;
 
 
-import com.github.benmanes.caffeine.cache.CacheLoader;
 import com.github.benmanes.caffeine.cache.Caffeine;
-
-import com.kai.caffeine_h2_practice.models.User;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.caffeine.CaffeineCacheManager;
